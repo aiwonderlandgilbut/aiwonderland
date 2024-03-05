@@ -59,22 +59,29 @@
   }
 
   @media (max-width: 767px) {
-    .row {
+  .row {
     flex-direction: column;
     align-items: stretch;
   }
-    .column {
+  .column {
     flex: 1 1 auto;
     width: 100%;
     padding: 5px 0;
   }
-    select {
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  appearance: menulist;
-}
-word-break: keep-all;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #E0E5EC;
+    box-shadow: 6px 6px 16px 0 #A3B1C6, -6px -6px 16px 0 #FFFFFF;
+    border-radius: 10px;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%23333' d='M1.41.59L6 5.17 10.59.59 12 2 6 8 0 2z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
   }
+}
 </style>
 
 </head>
