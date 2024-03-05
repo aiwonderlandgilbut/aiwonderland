@@ -7,7 +7,7 @@
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #E0E5EC; /* Light grey background */
+    background-color: #E0E5EC;
     color: #333;
     line-height: 1.6;
   }
@@ -53,6 +53,28 @@
     box-shadow: inset 6px 6px 16px 0 #A3B1C6, inset -6px -6px 16px 0 #FFFFFF;
     margin-top: 20px;
   }
+.title {
+    font-weight: bold;
+    color: #333;
+  }
+
+  @media (max-width: 767px) {
+    .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+    .column {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 5px 0;
+  }
+    select {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
+}
+word-break: keep-all;
+  }
 </style>
 
 </head>
@@ -60,7 +82,7 @@
 
   <div class="row">
     <div class="column">
-      <span>표현 방식</span>
+      <span class="title">표현 방식</span>
     </div>
     <div class="column">
       <select id="MEDIUM"></select>
@@ -76,7 +98,7 @@
 
   <div class="row">
     <div class="column">
-      <span>일반적 설명</span>
+      <span class="title">일반적 설명</span>
     </div>
     <div class="column">
       <select id="GENERAL DESCRIPTION"></select>
@@ -92,7 +114,7 @@
 
   <div class="row">
     <div class="column">
-      <span>장소</span>
+      <span class="title">장소</span>
     </div>
     <div class="column">
       <select id="LOCATION"></select>
@@ -108,7 +130,7 @@
 
   <div class="row">
     <div class="column">
-      <span>부가적 설명</span>
+      <span class="title">부가적 설명</span>
     </div>
     <div class="column">
       <select id="SPECIFIC DETAILS"></select>
@@ -124,7 +146,7 @@
 
   <div class="row">
     <div class="column">
-      <span>감정</span>
+      <span class="title">감정</span>
     </div>
     <div class="column">
       <select id="EMOTIONS"></select>
@@ -140,7 +162,7 @@
 
   <div class="row">
     <div class="column">
-      <span>시간</span>
+      <span class="title">시간</span>
     </div>
     <div class="column">
       <select id="HOUR"></select>
@@ -156,7 +178,7 @@
 
   <div class="row">
     <div class="column">
-      <span>조명</span>
+      <span class="title">조명</span>
     </div>
     <div class="column">
       <select id="LIGHTING"></select>
@@ -172,7 +194,7 @@
 
   <div class="row">
     <div class="column">
-      <span>환경</span>
+      <span class="title">환경</span>
     </div>
     <div class="column">
       <select id="AMBIENT"></select>
@@ -188,7 +210,7 @@
 
   <div class="row">
     <div class="column">
-      <span>참조 아티스트</span>
+      <span class="title">참조 아티스트</span>
     </div>
     <div class="column">
       <select id="ARTIST STYLE"></select>
@@ -204,7 +226,7 @@
 
   <div class="row">
     <div class="column">
-      <span>필름 스타일</span>
+      <span class="title">필름 스타일</span>
     </div>
     <div class="column">
       <select id="FILM STYLE"></select>
@@ -220,7 +242,7 @@
 
   <div class="row">
     <div class="column">
-      <span>이미지 타입</span>
+      <span class="title">이미지 타입</span>
     </div>
     <div class="column">
       <select id="SHOT TYPE"></select>
@@ -236,7 +258,7 @@
 
   <div class="row">
     <div class="column">
-      <span>기타 태그</span>
+      <span class="title">기타 태그</span>
     </div>
     <div class="column">
       <select id="TAGS"></select>
@@ -252,7 +274,7 @@
 
   <div class="row">
     <div class="column">
-      <span>이미지의 장르</span>
+      <span class="title">이미지의 장르</span>
     </div>
     <div class="column">
       <select id="MOVIE GENRE/PHOTOGRAPHY STYLE"></select>
@@ -268,7 +290,7 @@
 
   <div class="row">
     <div class="column">
-      <span>종횡비</span>
+      <span class="title">종횡비</span>
     </div>
     <div class="column">
       <select id="ASPECT RATIO"></select>
@@ -284,7 +306,7 @@
 
   <div class="row">
     <div class="column">
-      <span>카오스 파라미터</span>
+      <span class="title">카오스 파라미터</span>
     </div>
     <div class="column">
       <select id="CHAOS"></select>
